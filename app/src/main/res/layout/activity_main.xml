@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/wethr"
+        android:padding="10dp"
+        android:id="@+id/first_relativeLayout"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="14"
+            android:textColor="#fff"
+            android:textSize="40dp"
+            android:id="@+id/text_view1"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amritsar | Clear"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:id="@+id/text_view2"
+            android:layout_below="@+id/text_view1"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="more details >"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/camera"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#ffffff">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/sunny"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:id="@+id/moon"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Today"
+                    android:textSize="20dp"
+                    android:id="@+id/today"
+                    android:textColor="#000"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="50dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="clear"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:id="@+id/clear"
+                    android:layout_below="@+id/today"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="50dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="21/6"
+                    android:textColor="#000"
+                    android:textSize="25dp"
+                   android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#ffffff">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/cloudy"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:id="@+id/cloud"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tomorrow"
+                    android:textSize="20dp"
+                    android:id="@+id/tomorrow"
+                    android:textColor="#000"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="50dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="cloudy"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:id="@+id/cloudy"
+                    android:layout_below="@+id/tomorrow"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="50dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18/4"
+                    android:textColor="#000"
+                    android:textSize="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#ffffff">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/sunny"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:id="@+id/sun"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Friday"
+                    android:textSize="20dp"
+                    android:id="@+id/friday"
+                    android:textColor="#000"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="50dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="clear"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:id="@+id/clear_friday"
+                    android:layout_below="@+id/friday"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="50dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="22/7"
+                    android:textColor="#000"
+                    android:textSize="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#ffffff">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/moderate_rain"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:id="@+id/rain"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Saturday"
+                    android:textSize="20dp"
+                    android:id="@+id/saturday"
+                    android:textColor="#000"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="50dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="rain"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:id="@+id/rain_saturday"
+                    android:layout_below="@+id/saturday"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="50dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18/5"
+                    android:textColor="#000"
+                    android:textSize="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#ffffff">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/thunderstrom"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:id="@+id/thunderstrom"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sunday"
+                    android:textSize="20dp"
+                    android:id="@+id/sunday"
+                    android:textColor="#000"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="50dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="thunderstrom"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:id="@+id/thunderstrom_sunday"
+                    android:layout_below="@+id/sunday"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="50dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="17/4"
+                    android:textColor="#000"
+                    android:textSize="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#ffffff">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/cloud_rain"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:id="@+id/moderate_rain"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Monday"
+                    android:textSize="20dp"
+                    android:id="@+id/monday"
+                    android:textColor="#000"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="50dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="moderate rain"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:id="@+id/moderate_rain_monday"
+                    android:layout_below="@+id/monday"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="50dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18/5"
+                    android:textColor="#000"
+                    android:textSize="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="#000"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/user"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/user"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign in/Sign up"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:id="@+id/sign_in_up"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#96ffffff"
+            android:layout_marginTop="10dp">
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/location"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit Location"
+                android:textSize="20dp"
+                android:id="@+id/edit_location"
+                android:textColor="#fff"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/location"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Current Location"
+                android:textSize="20dp"
+                android:id="@+id/current_location"
+                android:textColor="#fff"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/location"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amritsar"
+                android:textSize="20dp"
+                android:id="@+id/amritsar_location"
+                android:textColor="#fff"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tools"
+            android:textSize="20dp"
+            android:layout_margin="20dp"
+            android:textColor="#fff"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/setting"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Setting"
+                android:textSize="20dp"
+                android:id="@+id/setting"
+                android:textColor="#fff"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/share"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Share"
+                android:textSize="20dp"
+                android:id="@+id/share"
+                android:textColor="#fff"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/star"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rate this app"
+                android:textSize="20dp"
+                android:id="@+id/rate_app"
+                android:textColor="#fff"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WEATHER"
+            android:textColor="#fff"
+            android:textSize="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Term and Policies"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+
+
+</android.support.v4.widget.DrawerLayout>
